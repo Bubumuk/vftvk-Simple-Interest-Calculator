@@ -18,15 +18,15 @@ function compute() {
     }
 
     document.getElementById("result").innerHTML=
-    "If you deposit \<b\>" + principal
-    + "\</b\>,\<br\>at an interest rate of \<b\>" + rate
-    + "%\</b\>\<br\>You will receive an amount of \<b\>" + interest
-    + "\</b\>,\<br\>in the year <b>" + year + "\</b\>\<br\>";
+    "If you deposit \<mark\>" + principal
+    + "\</mark\>,\<br\>at an interest rate of \<mark\>" + rate
+    + "%\</mark\>\<br\>You will receive an amount of \<mark\>" + interest
+    + "\</mark\>,\<br\>in the year <mark>" + year + "\</mark\>\<br\>";
 }
 
 function updateRate() {
     // Actualizar el texto con el valor del rango
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText = rateval;
+    document.getElementById("rate_val").innerText = rateval + "%";
 }
         
